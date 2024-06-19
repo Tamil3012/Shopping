@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: 10% !important;
+    background-attachment: fixed;    
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100% !important;
+}
+.add{
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    border-bottom: 5px solid gray !important ;
+    border: none;
+}
+.download{
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    border: none;
+}
+.sh-btn{
+    background-color: rgba(0, 0, 0, 0.50) !important;
+    border: none;
+    border-bottom: 4px solid black !important;
+}
+.share-det {
+  border: 2px solid rgb(175, 175, 175);
+}
+.menu{
+    overflow-x: auto;
+    /* overflow-y: hidden; */
+}
+/* .menu::-webkit-scrollbar{
+    height: 0;
+    
+} */
+
+.share-img img{
+  border: 3px solid #0dcaf0;
+}
+.view{
+    position: absolute;
+    top: 0 !important;
+    left:34%;
+    border-radius: 0px 0px 8px 8px !important;
+}
+.gal img:hover{
+    opacity: 0.50 !important;
+}
+.feed-box{
+    border-bottom: 3px solid rgb(204, 204, 204) !important;
+}
+.feed-btn{
+    border: none;
+}
+
+.star-wrapper {
+    direction: rtl;
+  }
+  .star-wrapper i {
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 4px;
+  }
+  .star-wrapper i:hover {
+    color: gold;
+    transform: scale(1.3);
+  }
+  .s1:hover ~ i {
+    color: gold;
+  }
+  .s2:hover ~ i {
+    color: gold;
+  }
+  .s3:hover ~ i {
+    color: gold;
+  }
+  .s4:hover ~ i {
+    color: gold;
+  }
+  .s5:hover ~ i {
+    color: gold;
+  }
+  .gall{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    
+  }
+
+  .product img{
+    cursor: pointer;
+  }
+
+  .product .popup-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+  .product .popup-img span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .product .popup-img img{
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 450px;
+    object-fit: cover;
+    
+  }
+  @media (max-width:768px){
+    .product .popup-img img{
+      width: 90%;
+    }
+  }
